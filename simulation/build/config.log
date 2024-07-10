@@ -1,0 +1,20 @@
+# project ns (3.18) configured on Wed Jul 10 09:34:34 2024 by
+# waf 1.7.11 (abi 98, python 2070cf0 on linux2)
+# using ./waf configure
+#
+----------------------------------------
+Setting top to
+/home/zhangran/work/astra-sim/extern/network_backend/ns3/simulation
+----------------------------------------
+Setting out to
+/home/zhangran/work/astra-sim/extern/network_backend/ns3/simulation/build
+----------------------------------------
+Checking for 'gcc' (c compiler)
+find program=['gcc', 'cc'] paths='' var='CC' -> 'gcc-4.9'
+from /home/zhangran/work/astra-sim/extern/network_backend/ns3/simulation: Could not determine the compiler version ['gcc-4.9', '-dM', '-E', '-']
+not found
+----------------------------------------
+Checking for 'icc' (c compiler)
+from /home/zhangran/work/astra-sim/extern/network_backend/ns3/simulation: Could not determine the compiler version ['gcc-4.9', '-dM', '-E', '-']
+not found
+from /home/zhangran/work/astra-sim/extern/network_backend/ns3/simulation: could not configure a c compiler!

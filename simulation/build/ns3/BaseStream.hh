@@ -18,13 +18,13 @@ LICENSE file in the root directory of this source tree.
 #include <sstream>
 #include <tuple>
 #include <vector>
-#include "ns3/Callable.hh"
-#include "ns3/CollectivePhase.hh"
-#include "ns3/Common.hh"
-#include "ns3/DataSet.hh"
-#include "ns3/StreamStat.hh"
-#include "ns3/Sys.hh"
-#include "ns3/LogicalTopology.hh"
+#include "Callable.hh"
+#include "CollectivePhase.hh"
+#include "Common.hh"
+#include "DataSet.hh"
+#include "StreamStat.hh"
+#include "Sys.hh"
+#include "astra-sim/system/topology/LogicalTopology.hh"
 
 namespace AstraSim {
 class RecvPacketEventHadndlerData;
@@ -65,12 +65,12 @@ class BaseStream : public Callable, public StreamStat {
       int stream_num,
       Sys* owner,
       std::list<CollectivePhase> phases_to_go);
-  void declare_ready();
-  bool is_ready();
-  void consume_ready();
-  void suspend_ready();
-  void resume_ready(int st_num);
-  void destruct_ready();
+  //void declare_ready();
+  //bool is_ready();
+  //void consume_ready();
+  //void suspend_ready();
+  //void resume_ready(int st_num);
+  //void destruct_ready();
 };
 } // namespace AstraSim
 #endif
