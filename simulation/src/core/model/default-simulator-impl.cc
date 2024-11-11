@@ -27,7 +27,7 @@
 #include "pointer.h"
 #include "assert.h"
 #include "log.h"
-
+#include "../../../scratch/GlobalResourceManager.h"
 #include <cmath>
 
 // Note:  Logging in this file is largely avoided due to the
@@ -127,6 +127,10 @@ DefaultSimulatorImpl::GetSystemId (void) const
   return 0;
 }
 
+//support for madrona.
+uint64_t time_internal=1000;
+uint64_t last_step_time=0;
+
 void
 DefaultSimulatorImpl::ProcessOneEvent (void)
 {
@@ -137,6 +141,16 @@ DefaultSimulatorImpl::ProcessOneEvent (void)
 
   NS_LOG_LOGIC ("handle " << next.key.m_ts);
   m_currentTs = next.key.m_ts;
+
+  //support for madrona step1 :check if timespan is over internal
+  while ((m_currentTs-last_step_time)>time_internal)
+  {
+    //type 10 means madrona to go next frame.
+    GlobalResourceManager::comm_send_wait_callback(0, 0, 10, 0, 0, 0,0);
+    printf("madrona to go next frame.: %llu-%llu>%llu\n", m_currentTs,last_step_time,time_internal);
+    last_step_time+=time_internal;
+  }
+
   m_currentContext = next.key.m_context;
   m_currentUid = next.key.m_uid;
   next.impl->Invoke ();
@@ -194,10 +208,22 @@ DefaultSimulatorImpl::Run (void)
   ProcessEventsWithContext ();
   m_stop = false;
 
-  while (!m_events->IsEmpty () && !m_stop) 
+
+
+  while (true)
+  {
+      while (!m_events->IsEmpty () && !m_stop) 
     {
       ProcessOneEvent ();
     }
+
+    //no event means to run madrona until return one flow event.
+    //type 100 means madrona to run until return one flow event.
+     GlobalResourceManager::comm_send_wait_callback(0, 0, 10, 0, 0, 0,0);
+     printf("no event means to run madrona until return one flow event!");
+  }
+  
+
 
   // If the simulator stopped naturally by lack of events, make a
   // consistency test to check that we didn't lose any events along the way.
