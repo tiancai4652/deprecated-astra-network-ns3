@@ -218,8 +218,8 @@ DefaultSimulatorImpl::Run (void)
     }
 
     //no event means to run madrona until return one flow event.
-    //type 100 means madrona to run until return one flow event.
-     GlobalResourceManager::comm_send_wait_callback(0, 0, 10, 0, 0, 0,0);
+    //type 11 means madrona to run until return one flow event.
+     GlobalResourceManager::comm_send_wait_callback(0, 0, 11, 0, 0, 0,0);
      printf("no event means to run madrona until return one flow event!");
   }
   
