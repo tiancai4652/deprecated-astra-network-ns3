@@ -1,0 +1,55 @@
+Waf: Entering directory `/home/zhangran/work/astra-sim/extern/network_backend/ns3/simulation/build'
+('./src/applications/astra-sim/network_frontend', ['README.md'])
+('./src/applications/astra-sim/network_frontend/ns3', ['AstraSimNetwork.cc', 'GlobalResourceManager.h', 'entry.h', 'AstraSimNetwork.h', 'README.md'])
+[1520/1527] cxxprogram: build/utils/test-runner.cc.1.o -> build/utils/ns3.18-test-runner-debug
+[1520/1527] cxxprogram: build/utils/print-introspected-doxygen.cc.4.o -> build/utils/ns3.18-print-introspected-doxygen-debug
+[1521/1527] cxxprogram: build/scratch/AstraSimNetwork.cc.1.o -> build/scratch/AstraSimNetwork
+Waf: Leaving directory `/home/zhangran/work/astra-sim/extern/network_backend/ns3/simulation/build'
+'build' finished successfully (1.208s)
+Start Comm....
+size:32
+size:32
+End....
+job_npus:8
+Success in opening system file
+Var is: scheduling-policy: ,val is: LIFO
+Var is: endpoint-delay: ,val is: 10
+Var is: active-chunks-per-dimension: ,val is: 1
+Var is: preferred-dataset-splits: ,val is: 1
+Var is: boost-mode: ,val is: 0
+Var is: all-reduce-implementation: ,val is: ring_ring
+Var is: all-gather-implementation: ,val is: ring_ring
+Var is: reduce-scatter-implementation: ,val is: ring_ring
+Var is: all-to-all-implementation: ,val is: oneDirect
+Var is: collective-optimization: ,val is: localBWAware
+Var is:  ,val is: localBWAware
+The final active chunks per dimension 1 after allocating to queues is: 1
+ring of node 0, id: 0 dimension: local total nodes in ring: 8 index in ring: 0 offset: 1total nodes in ring: 8
+ring of node 0, id: 0 dimension: local total nodes in ring: 1 index in ring: 0 offset: 8total nodes in ring: 1
+ring of node 0, id: 0 dimension: local total nodes in ring: 8 index in ring: 0 offset: 1total nodes in ring: 8
+ring of node 0, id: 0 dimension: local total nodes in ring: 1 index in ring: 0 offset: 8total nodes in ring: 1
+ring of node 0, id: 0 dimension: local total nodes in ring: 8 index in ring: 0 offset: 1total nodes in ring: 8
+ring of node 0, id: 0 dimension: local total nodes in ring: 1 index in ring: 0 offset: 8total nodes in ring: 1
+ring of node 0, id: 0 dimension: local total nodes in ring: 8 index in ring: 0 offset: 1total nodes in ring: 8
+total nodes: 8
+LogGP model, the local reduction delay is: 1
+LogGP model, the local reduction delay is: 1
+LogGP model, the local reduction delay is: 1
+LogGP model, the local reduction delay is: 1
+Shared bus modeling enabled? false
+LogGP model, the L is:0 ,o is: 0 ,g is: 0 ,G is: 0.0038
+communication delay (in the case of disabled shared bus): 10
+Shared bus modeling enabled? false
+LogGP model, the L is:0 ,o is: 0 ,g is: 0 ,G is: 0
+communication delay (in the case of disabled shared bus): 10
+Success in opening workload file
+id: conv1 , depen: -1 , wg_comp_time: 5
+type: MICRO ,num passes: 1 ,lines: 1 compute scale: 1 ,comm scale: 1
+stat path: scratch/results/ ,total rows: 1 ,stat row: 0
+CSV path and filename: scratch/results/detailed_0.csv
+Success in opening CSV file for writing the report.
+CSV path and filename: scratch/results/EndToEnd_0.csv
+Success in opening CSV file for writing the report.
+sim_schedule: 10.000000
+info: all-reduce weight grad collective issued for layer: conv1 with size: 1048576, involved dimensions:  1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+Interrupted 

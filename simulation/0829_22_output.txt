@@ -1,0 +1,401 @@
+('./src/applications/astra-sim/network_frontend', ['README.md'])
+('./src/applications/astra-sim/network_frontend/ns3', ['AstraSimNetwork.cc', 'myTCP.cc', 'AstraSimNetwork_a2a.cc', 'entry.h', 'AstraSimNetwork.h', 'seventh.cc', 'README.md'])
+Success in opening system file
+Var is: scheduling-policy: ,val is: LIFO
+Var is: endpoint-delay: ,val is: 10
+Var is: active-chunks-per-dimension: ,val is: 1
+Var is: preferred-dataset-splits: ,val is: 1
+Var is: boost-mode: ,val is: 0
+Var is: all-reduce-implementation: ,val is: ring_ring
+Var is: all-gather-implementation: ,val is: ring_ring
+Var is: reduce-scatter-implementation: ,val is: ring_ring
+Var is: all-to-all-implementation: ,val is: oneDirect
+Var is: collective-optimization: ,val is: localBWAware
+Var is:  ,val is: localBWAware
+The final active chunks per dimension 1 after allocating to queues is: 1
+ring of node 0, id: 0 dimension: local total nodes in ring: 8 index in ring: 0 offset: 1total nodes in ring: 8
+ring of node 0, id: 0 dimension: local total nodes in ring: 1 index in ring: 0 offset: 8total nodes in ring: 1
+ring of node 0, id: 0 dimension: local total nodes in ring: 8 index in ring: 0 offset: 1total nodes in ring: 8
+ring of node 0, id: 0 dimension: local total nodes in ring: 1 index in ring: 0 offset: 8total nodes in ring: 1
+ring of node 0, id: 0 dimension: local total nodes in ring: 8 index in ring: 0 offset: 1total nodes in ring: 8
+ring of node 0, id: 0 dimension: local total nodes in ring: 1 index in ring: 0 offset: 8total nodes in ring: 1
+ring of node 0, id: 0 dimension: local total nodes in ring: 8 index in ring: 0 offset: 1total nodes in ring: 8
+total nodes: 8
+LogGP model, the local reduction delay is: 1
+LogGP model, the local reduction delay is: 1
+LogGP model, the local reduction delay is: 1
+LogGP model, the local reduction delay is: 1
+Shared bus modeling enabled? false
+LogGP model, the L is:0 ,o is: 0 ,g is: 0 ,G is: 0.0038
+communication delay (in the case of disabled shared bus): 10
+Shared bus modeling enabled? false
+LogGP model, the L is:0 ,o is: 0 ,g is: 0 ,G is: 0
+communication delay (in the case of disabled shared bus): 10
+Success in opening workload file
+id: conv1 , depen: -1 , wg_comp_time: 5
+type: MICRO ,num passes: 1 ,lines: 1 compute scale: 1 ,comm scale: 1
+stat path: scratch/results/ ,total rows: 1 ,stat row: 0
+CSV path and filename: scratch/results/detailed_0.csv
+Success in opening CSV file for writing the report.
+CSV path and filename: scratch/results/EndToEnd_0.csv
+Success in opening CSV file for writing the report.
+QP is enabled 
+maxRtt=70160 maxBdp=1754000
+Running Simulation.
+sim_schedule: 10.000000
+info: all-reduce weight grad collective issued for layer: conv1 with size: 1048576, involved dimensions:  1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_send: 0.000000 0-1
+sim_send: 0.000000 1-2
+sim_send: 0.000000 2-3
+sim_send: 0.000000 3-4
+sim_send: 0.000000 4-5
+sim_send: 0.000000 5-6
+sim_send: 0.000000 6-7
+sim_send: 0.000000 7-0
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_send: 0.000000 1-2
+sim_send: 0.000000 2-3
+sim_send: 0.000000 3-4
+sim_send: 0.000000 4-5
+sim_send: 0.000000 5-6
+sim_send: 0.000000 6-7
+sim_send: 0.000000 7-0
+sim_send: 0.000000 0-1
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_send: 0.000000 2-3
+sim_send: 0.000000 3-4
+sim_send: 0.000000 4-5
+sim_send: 0.000000 5-6
+sim_send: 0.000000 6-7
+sim_send: 0.000000 7-0
+sim_send: 0.000000 0-1
+sim_send: 0.000000 1-2
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_send: 0.000000 3-4
+sim_send: 0.000000 4-5
+sim_send: 0.000000 5-6
+sim_send: 0.000000 6-7
+sim_send: 0.000000 7-0
+sim_send: 0.000000 0-1
+sim_send: 0.000000 1-2
+sim_send: 0.000000 2-3
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_send: 0.000000 4-5
+sim_send: 0.000000 5-6
+sim_send: 0.000000 6-7
+sim_send: 0.000000 7-0
+sim_send: 0.000000 0-1
+sim_send: 0.000000 1-2
+sim_send: 0.000000 2-3
+sim_send: 0.000000 3-4
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_send: 0.000000 5-6
+sim_send: 0.000000 6-7
+sim_send: 0.000000 7-0
+sim_send: 0.000000 0-1
+sim_send: 0.000000 1-2
+sim_send: 0.000000 2-3
+sim_send: 0.000000 3-4
+sim_send: 0.000000 4-5
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_send: 0.000000 6-7
+sim_send: 0.000000 7-0
+sim_send: 0.000000 0-1
+sim_send: 0.000000 1-2
+sim_send: 0.000000 2-3
+sim_send: 0.000000 3-4
+sim_send: 0.000000 4-5
+sim_send: 0.000000 5-6
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_schedule: 30.000000
+sim_send: 0.000000 7-0
+sim_send: 0.000000 0-1
+sim_send: 0.000000 1-2
+sim_send: 0.000000 2-3
+sim_send: 0.000000 3-4
+sim_send: 0.000000 4-5
+sim_send: 0.000000 5-6
+sim_send: 0.000000 6-7
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_send: 0.000000 0-1
+sim_send: 0.000000 1-2
+sim_send: 0.000000 2-3
+sim_send: 0.000000 3-4
+sim_send: 0.000000 4-5
+sim_send: 0.000000 5-6
+sim_send: 0.000000 6-7
+sim_send: 0.000000 7-0
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_send: 0.000000 1-2
+sim_send: 0.000000 2-3
+sim_send: 0.000000 3-4
+sim_send: 0.000000 4-5
+sim_send: 0.000000 5-6
+sim_send: 0.000000 6-7
+sim_send: 0.000000 7-0
+sim_send: 0.000000 0-1
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_send: 0.000000 2-3
+sim_send: 0.000000 3-4
+sim_send: 0.000000 4-5
+sim_send: 0.000000 5-6
+sim_send: 0.000000 6-7
+sim_send: 0.000000 7-0
+sim_send: 0.000000 0-1
+sim_send: 0.000000 1-2
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_send: 0.000000 3-4
+sim_send: 0.000000 4-5
+sim_send: 0.000000 5-6
+sim_send: 0.000000 6-7
+sim_send: 0.000000 7-0
+sim_send: 0.000000 0-1
+sim_send: 0.000000 1-2
+sim_send: 0.000000 2-3
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_send: 0.000000 4-5
+sim_send: 0.000000 5-6
+sim_send: 0.000000 6-7
+sim_send: 0.000000 7-0
+sim_send: 0.000000 0-1
+sim_send: 0.000000 1-2
+sim_send: 0.000000 2-3
+sim_send: 0.000000 3-4
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_send: 0.000000 5-6
+sim_send: 0.000000 6-7
+sim_send: 0.000000 7-0
+sim_send: 0.000000 0-1
+sim_send: 0.000000 1-2
+sim_send: 0.000000 2-3
+sim_send: 0.000000 3-4
+sim_send: 0.000000 4-5
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 10.000000
+sim_schedule: 5.000000
+sim_schedule: 5.000000
+sim_schedule: 5.000000
+sim_schedule: 5.000000
+sim_schedule: 5.000000
+sim_schedule: 5.000000
+sim_schedule: 5.000000
+sim_schedule: 5.000000
+***** info: weight gradient collective for layer: conv1 is finished************
+
+workload stats for the job scheduled at NPU offset: 0
+*******************
+Layer id: conv1
+Total collectives issued for this layer: 1
+*************************  Workload stats  ************************* conv1
+id: conv1 ,Total cycles spent on fwd pass compute: 0
+id: conv1 ,Total cycles spent on weight grad compute: 0
+id: conv1 ,Total cycles spent on input grad compute: 0
+id: conv1 ,Total cycles spent idle waiting for fwd finish: 0
+id: conv1 ,Total cycles spent idle waiting for weight grad finish: 356245
+id: conv1 ,Total cycles spent idle waiting for input grad finish: 0
+id: conv1 ,Total cycles spent on fwd pass comm: 0
+id: conv1 ,Total cycles spent on weight grad comm: 356245
+id: conv1 ,Total cycles spent on input grad comm: 0
+*************************  Queuing stats  ************************* conv1
+id: conv1 ,Average cycles spent on queuing for phase 0 of algorithm (per chunk): 0
+id: conv1 ,Average cycles spent on queuing for phase 1 of algorithm (per chunk): 0
+*************************  Network stats  ************************* conv1
+id: conv1 ,Average cycles spent on network for phase 1 of algorithm (per message): 25420
+*************************  Chunk Stats Per Logical Dimension (for all layers) ************************* conv1
+ ,Average chunk latency for logical dimension  1 of topology: 356240
+ ,Average chunk latency for logical dimension  2 of topology: -nan
+*************************
+all passes finished at time: 356245, id of first layer: conv1
+path to create csvs is: scratch/results/
+success in openning file
+*****
+Time to exit: Thu Nov 21 06:33:35 2024
+all-reduce Collective implementation: ring ring
+reduce-scatter Collective implementation: ring ring
+all-gather Collective implementation: ring ring
+all-to-all Collective implementation: oneDirect
+Collective optimization: localBWAware
+Total sim duration: 0:0 hours
+Total streams injected: 1
+Total streams finished: 1
+Percentage of finished streams: 100 %
+*****
+Exiting
+All data sent from node 0 is 1835008
+All data received by node 0 is 1835008
+All data sent from node 1 is 1835008
+All data received by node 1 is 1835008
+All data sent from node 2 is 1835008
+All data received by node 2 is 1835008
+All data sent from node 3 is 1835008
+All data received by node 3 is 1835008
+All data sent from node 4 is 1835008
+All data received by node 4 is 1835008
+All data sent from node 5 is 1835008
+All data received by node 5 is 1835008
+All data sent from node 6 is 1835008
+All data received by node 6 is 1835008
+All data sent from node 7 is 1835008
+All data received by node 7 is 1835008
+程序启动时间: 1732170813773947479
+程序结束时间: 1732170815625927981
+程序运行时间: 1851 毫秒
